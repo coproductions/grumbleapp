@@ -1,0 +1,35 @@
+<head>
+  <title>Chat List</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Chat List</h1>
+      {{> loginButtons}}
+      {{ #if currentUser }}
+        <form class="new-chatBlurb">
+          <input type="text" name="text" placeholder="Type to rant." />
+        </form>
+      {{ /if }}
+    </header>
+    <ul>
+      {{#each chatBlurbs}}
+        {{> chatBlurb}}
+      {{/each}}
+    </ul>
+  </div>
+</body>
+
+<template name="chatBlurb">
+  <li class="{{#if checked}}checked{{/if}}">
+    <button class="delete">&times;</button>
+
+    <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
+      {{#if isOwner}}
+        <b> THIS IS YOUR RANT.</b>
+      {{/if}}
+
+    <span class="text">{{text}}</span>
+  </li>
+</template>
