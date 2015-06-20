@@ -8,3 +8,4 @@ meteor-platform
 accounts-ui
 accounts-password
 accounts-facebook
+momentjs:moment

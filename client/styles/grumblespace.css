@@ -1,4 +1,4 @@
-/*body {
+body {
   font-family: sans-serif;
   background-color: #315481;
   background-image: linear-gradient(to bottom, #315481, #918e82 100%);
@@ -122,4 +122,4 @@ header .hide-completed {
   .new-task input {
     padding-bottom: 5px;
   }
-}*/
+}

@@ -1,5 +1,5 @@
 <head>
-  <title>Chat List</title>
+  <title>GRUMBLE SPACE</title>
 </head>
 
 <body>
@@ -21,15 +21,3 @@
   </div>
 </body>
 
-<template name="chatBlurb">
-  <li class="{{#if checked}}checked{{/if}}">
-    <button class="delete">&times;</button>
-
-    <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
-      {{#if isOwner}}
-        <b> THIS IS YOUR RANT.</b>
-      {{/if}}
-
-    <span class="text">{{text}}</span>
-  </li>
-</template>
