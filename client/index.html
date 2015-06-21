@@ -16,8 +16,19 @@
         {{/if}}
           {{> loginButtons}}
       </div>
-      <div class="main_header">
+      <div class="main_header row">
       <h1>GRUMBLE SPACE</h1>
+      </div>
+      <div class="tagline">
+        <h6>Share your despair. Your not alone.  Are you ready to grumble.</h6>
+      </div>
+      <div class="new-blurb-form row">
+        {{ #if currentUser }}
+          <form class="new-chatBlurb">
+            <input type="textarea" size="50" name="text" placeholder="Type to grumble." />
+            <button>SUBMIT</button>
+          </form>
+        {{ /if }}
       </div>
     </header>
     <div class="row">
@@ -28,21 +39,7 @@
       </ul>
     </div>
     <footer class="row">
-      <div class="new-blurb-form">
-        {{ #if currentUser }}
-          <form class="new-chatBlurb">
-            <input type="textarea" size="50" name="text" placeholder="Type to grumble." />
-            <button>SUBMIT</button>
-          </form>
-        {{ /if }}
-      </div>
-      <span class="app_version">v. ALPHA 0.2</span>
-      <div
-        class="fb-like"
-        data-share="true"
-        data-width="450"
-        data-show-faces="true">
-      </div>
+      <span class="app_version">v. ALPHA 0.3</span>
     </footer>
   </div>
 <div class="large-2 columns"></div>

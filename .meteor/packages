@@ -10,5 +10,5 @@ accounts-password
 momentjs:moment
 accounts-meteor-developer
 accounts-facebook
-accounts-twitter
 accounts-google
+service-configuration
