@@ -24,7 +24,7 @@ Template.chatBlurb.helpers({
   }
 });
 Template.chatBlurb.events({
-  "click .delete": function () {
+  "click .delete": function (event) {
     Meteor.call("deleteChatBlurb", this._id);
   },
   "click .box": function (event){
