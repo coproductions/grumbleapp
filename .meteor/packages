@@ -7,5 +7,9 @@
 meteor-platform
 accounts-ui
 accounts-password
-accounts-facebook
 momentjs:moment
+accounts-meteor-developer
+accounts-facebook
+accounts-google
+service-configuration
+matthew:foundation5-sass
