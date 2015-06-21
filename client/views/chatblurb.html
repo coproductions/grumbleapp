@@ -2,11 +2,12 @@
   <li class="chatBlurbItem">
     <button class="delete">&times;</button>
     <img src="assets/pug_orange.png" width="70" height="70" />
-    <span class="chatBlurb_username"><b>{{username}}</b></span>
+    <span class="chatBlurb_username"><b>{{username}}: </b></span>
       {{#if isOwner}}
         <u>(YOU)</u>
       {{/if}}
     <span class="chatBlurb_text">{{text}}</span>
-    <span class="chatBlurb_date">{{createdAt}}</span>
+    <br />
+      <span class="chatBlurb_date">{{relativeTime}}</span>
   </li>
 </template>

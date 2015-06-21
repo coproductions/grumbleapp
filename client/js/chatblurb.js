@@ -7,6 +7,9 @@ Template.chatBlurb.destroyed = function (){
 Template.chatBlurb.helpers({
   isOwner: function () {
     return this.owner === Meteor.userId();
+  },
+  relativeTime: function () {
+    return moment(this.createdAt).fromNow();
   }
 });
 Template.chatBlurb.events({
