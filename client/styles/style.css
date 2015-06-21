@@ -3,50 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700|Cagliostro);
 
 /* LET THE EDITS BEGIN */
 
@@ -56,6 +13,8 @@ table {
 
 body {
   margin: 0;
+  font-family: 'Lato', sans-serif;
+  overflow: auto;
 }
 
 html, body {
@@ -63,23 +22,33 @@ html, body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
+/*    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;*/
 }
 
 p {
-  font-family: arial;
+  font-family: 'Lato', sans-serif;
 }
 
 h1 {
-  font-family: helvetica;
+  font-family: 'Cagliostro';
 }
 
 h2 {
-  font-family: helvetica;
-  font-size: 1.2em;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1em;
   font-weight: bold;
-  color: #1c57ff;
+  color: #36B;
+}
+
+.new-chatBlurb{
+  text-align: center;
+}
+
+.tagline{
+  color: #999;
+  font-size: 12px;
+  text-align: center;
 }
 
 .wrapper {
@@ -91,24 +60,27 @@ h2 {
 /*HEADER*/
 
 #header {
-  background-color: #ffffff;
+  background-color: #FFF;
   width: 100%;
-  height: 7em;
+  height: 6em;
+  text-align: center;
   position: fixed;
   top: 0;
   z-index: 9999;
-  display: inline;
+  padding-top: 2%;
+  /*display: inline;*/
 
-  -webkit-box-shadow: 0 0 4px 1px black;
-  -moz-box-shadow: 0 0 4px 1px black;
-  box-shadow: 0 0 4px 1px black;
+  -webkit-box-shadow: 0 0 4px 1px #CCC;
+  -moz-box-shadow: 0 0 4px 1px #CCC;
+  box-shadow: 0 0 4px 1px #CCC;
 
 }
 
 .menuIcon {
-  width: 1em;
-  margin: 1em;
+  width: 10%;
+  margin-right: 1em;
   float: left;
+  display: block;
 }
 
 .menuIcon img {
@@ -116,20 +88,29 @@ h2 {
 }
 
 .title {
-  color: #f7941d;
+  color: #F90;
+  width: 75%;
   font-size: 4em;
   text-align: center;
-  margin-top: 2%;
+  font-family: 'Cagliostro', sans-serif;
+  display: inline-block;
 }
 
 .pug {
-  margin: -3.5em 1em 0em 0em;
+  width: 10%;
+  padding-right: 1em;
+  margin-left: -1em;
+  float: right;
   text-align: right;
+  display: inline-block;
 }
 
 .pug img {
   width: 4em;
+}
 
+.login-link {
+  text-align: center;
 }
 
 /*CONTAINER*/
@@ -137,25 +118,26 @@ h2 {
 .container {
   position: relative;
   width: 100%;
-  margin-bottom: 7em;
+  margin-bottom: 6em;
 }
 
 .box {
   width: 100%;
-  height: 10em;
-  -webkit-box-shadow: 0 0 1px -1px black;
-  -moz-box-shadow: 0 0 1px -1px black;
-  box-shadow: 0 0 1px -1px black;
-
+  height: 6em;
+  padding: 10px 0 10px 0;
+  -webkit-box-shadow: 0 0 1px -1px #333;
+  -moz-box-shadow: 0 0 1px -1px #333;
+  box-shadow: 0 0 1px -1px #333;
 }
 
 .avatar {
-  width: 8em;
-  padding: 2%;
+  padding-left: 1em;
+  width: 10%;
+  display: inline-block;
   float: left;
 }
 
-.avatar img{
+/*.avatar img{
   margin: 0 auto;
   top: 50%;
   left: 50%;
@@ -166,24 +148,35 @@ h2 {
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-}
-
-.timestamp, .innertext {
-  height: auto;
-}
+}*/
 
 .timestamp {
+  font-weight: bold;
+  color: #CCC;
   text-align: right;
-  padding: 1em 1em 0 0;
-  margin-bottom: .5em;
   font-size: .8em;
+  display: block;
 }
 
 .innertext{
-  padding-left: 10em;
+  height: 100%;
+  width: 75%;
+  padding-right: 1em;
+  display: inline-block;
+  float: right;
+  /*padding-left: 10em;*/
+}
+
+.textName{
+  display: block;
+}
+
+.textField{
+  display: block;
 }
 
 .preview{
+  display: block;
   margin-top: .2em;
   font-size: .9em;
 }
@@ -193,7 +186,7 @@ h2 {
 #nav {
   background-color: orange;
   width: 100%;
-  height: 7em;
+  height: 5em;
   bottom: 0;
   position: fixed;
   z-index: 9999;
@@ -203,24 +196,41 @@ h2 {
   width: 25%;
   height: 100%;
   float: left;
-  background-image: url('../imgs/someicon.png');
-  background-size: 7em;
+  display: inline-block;
+  background-image: url('/assets/someicon.png');
+  background-size: 4em;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #thunderbolt {
-  background-color: #1c57ff
+  background-color: #1c57ff;
 }
 
 #search {
-  background-color: #f7941d
+  background-color: #f7941d;
 }
 
 #image {
-  background-color: #22c064
+  background-color: #22c064;
 }
 
 #comment {
-  background-color: #e0483e
+  background-color: #e0483e;
+}
+
+.user_avatar {
+  background-image: url('/assets/pug_orange.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90px;
+  border-radius: 10em;
+}
+
+/* CLEARFIX aka GROUP */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }

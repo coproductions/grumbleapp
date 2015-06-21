@@ -1,12 +1,26 @@
 <template name="chatBlurb">
-  <li class="chatBlurbItem">
-    <button class="delete">&times;</button>
-    <img src="assets/pug_orange.png" width="70" height="70" />
-    <span class="chatBlurb_username"><b>{{username}}</b></span>
-      {{#if isOwner}}
-        <u>(YOU)</u>
-      {{/if}}
-    <span class="chatBlurb_text">{{text}}</span>
-    <span class="chatBlurb_date">{{createdAt}}</span>
+  <li class="box" onclick="location.href='/'">
+    <div class="avatar">
+      <div class="user_avatar group"></div>
+    </div>
+    <div class="innertext">
+      <div class="timestamp">
+        {{relativeTime}}
+      </div>
+      <div class="name">
+        <h2>
+          {{username}}:
+          {{#if isOwner}}
+          <u>(YOU)</u>
+          <button class="delete">&times;</button>
+          {{/if}}
+        </h2>
+      </div>
+      <div>
+        <p class="preview">
+          {{text}}
+        </p>
+      </div>
+    </div>
   </li>
 </template>
