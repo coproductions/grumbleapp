@@ -1,0 +1,226 @@
+/* Nakaz Version 1.0 */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* LET THE EDITS BEGIN */
+
+.clear {
+  clear: both;
+}
+
+body {
+  margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+p {
+  font-family: arial;
+}
+
+h1 {
+  font-family: helvetica;
+}
+
+h2 {
+  font-family: helvetica;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #1c57ff;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+/*HEADER*/
+
+#header {
+  background-color: #ffffff;
+  width: 100%;
+  height: 7em;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  display: inline;
+
+  -webkit-box-shadow: 0 0 4px 1px black;
+  -moz-box-shadow: 0 0 4px 1px black;
+  box-shadow: 0 0 4px 1px black;
+
+}
+
+.menuIcon {
+  width: 1em;
+  margin: 1em;
+  float: left;
+}
+
+.menuIcon img {
+  width: 6em;
+}
+
+.title {
+  color: #f7941d;
+  font-size: 4em;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.pug {
+  margin: -3.5em 1em 0em 0em;
+  text-align: right;
+}
+
+.pug img {
+  width: 4em;
+
+}
+
+/*CONTAINER*/
+
+.container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 7em;
+}
+
+.box {
+  width: 100%;
+  height: 10em;
+  -webkit-box-shadow: 0 0 1px -1px black;
+  -moz-box-shadow: 0 0 1px -1px black;
+  box-shadow: 0 0 1px -1px black;
+
+}
+
+.avatar {
+  width: 8em;
+  padding: 2%;
+  float: left;
+}
+
+.avatar img{
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  width: 8em;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.timestamp, .innertext {
+  height: auto;
+}
+
+.timestamp {
+  text-align: right;
+  padding: 1em 1em 0 0;
+  margin-bottom: .5em;
+  font-size: .8em;
+}
+
+.innertext{
+  padding-left: 10em;
+}
+
+.preview{
+  margin-top: .2em;
+  font-size: .9em;
+}
+
+/*FOOTER*/
+
+#nav {
+  background-color: orange;
+  width: 100%;
+  height: 7em;
+  bottom: 0;
+  position: fixed;
+  z-index: 9999;
+}
+
+.navButton {
+  width: 25%;
+  height: 100%;
+  float: left;
+  background-image: url('../imgs/someicon.png');
+  background-size: 7em;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#thunderbolt {
+  background-color: #1c57ff
+}
+
+#search {
+  background-color: #f7941d
+}
+
+#image {
+  background-color: #22c064
+}
+
+#comment {
+  background-color: #e0483e
+}
