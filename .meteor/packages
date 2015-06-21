@@ -7,5 +7,8 @@
 meteor-platform
 accounts-ui
 accounts-password
-accounts-facebook
 momentjs:moment
+accounts-meteor-developer
+accounts-facebook
+accounts-twitter
+accounts-google

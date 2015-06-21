@@ -1,14 +1,16 @@
 <template name="chatBlurb">
-  <li class="chatBlurbItem">
-    <button class="delete">&times;</button>
-    <div class="user_avatar"></div>
+  <li class="chatBlurbItem row">
+    {{#if isOwner}}
+      <button class="delete">&times;</button>
+    {{/if}}
+    <div class="user_avatar large-2 columns list_item"></div>
     <!-- <div class="user_avatar"><img src="assets/pug_orange.png" width="70" height="70" /></div> -->
-    <span class="chatBlurb_username"><b>{{username}}: </b></span>
+    <div class="chatBlurb_username large-8 columns list_item"><b>{{username}}:</b></div>
       {{#if isOwner}}
         <u>(YOU)</u>
       {{/if}}
-    <span class="chatBlurb_text">{{text}}</span>
+    <div class="chatBlurb_text large-8 columns list_item">{{text}}</div>
     <br />
-      <span class="chatBlurb_date">{{relativeTime}}</span>
+      <div class="chatBlurb_date large-2 columns list_item">{{relativeTime}}</div>
   </li>
 </template>
