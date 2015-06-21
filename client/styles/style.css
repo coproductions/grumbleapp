@@ -232,3 +232,13 @@ h2 {
   display: table;
   clear: both;
 }
+
+/* ------------------------------------ small MQ */
+@media only screen and (max-width: 499px){ 
+  .hamburgericon {
+    visibility: hidden;
+  }
+  .pugicon {
+    visibility: hidden;
+  }
+}
