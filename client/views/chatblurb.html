@@ -6,10 +6,17 @@
     <div class="innertext">
       <div class="timestamp">
         {{relativeTime}}
+        <p>
+        {{#if grumpy}}
+          {{counter}} others grumbled too.
+        {{else}}
+          No one grumbled with this.
+        {{/if}}
+        </p>
       </div>
       <div class="name">
         <h2>
-          {{username}}:
+          {{username}}{{facebookName}}:
           {{#if isOwner}}
           <u>(YOU)</u>
           <button class="delete">&times;</button>

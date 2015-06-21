@@ -16,10 +16,20 @@ Template.chatBlurb.helpers({
       console.log(this.name);
       return this.name;
     }
+  },
+  grumpy: function() {
+    if (this.counter > 0){
+      return true;
+    }
   }
 });
 Template.chatBlurb.events({
   "click .delete": function () {
     Meteor.call("deleteChatBlurb", this._id);
+  },
+  "click .box": function (event){
+    if (Meteor.user() !== null){
+      Meteor.call("grumbleVote", this._id, Meteor.user()._id);
+    }
   }
 });
