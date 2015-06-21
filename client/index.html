@@ -1,23 +1,43 @@
 <head>
   <title>GRUMBLE SPACE</title>
+  <meta name="description" content="Share your despair by posting you rant. Powered by Meteor.">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, minimal-ui, maximum-scale=1, minimum-scale=1" />
+  <link rel="shortcut icon" type="image/ico" href="/assets/pug_orange.ico?v=#" sizes="16x16 32x32 64x64">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/pug_orange.ico?v=#">
 </head>
 
 <body>
-  <div class="container">
-    <header>
+<div class="large-2 columns"></div>
+  <div class="container large-8 columns">
+    <header class="row">
+     <div class="login-link">
+        {{# if currentUser }}
+          You are logged in as: 
+        {{/if}}
+          {{> loginButtons}}
+      </div>
+      <div class="main_header">
       <h1>GRUMBLE SPACE</h1>
-      {{> loginButtons}}
-      {{ #if currentUser }}
-        <form class="new-chatBlurb">
-          <input type="text" name="text" placeholder="Type to rant." />
-        </form>
-      {{ /if }}
+      </div>
     </header>
-    <ul>
-      {{#each chatBlurbs}}
-        {{> chatBlurb}}
-      {{/each}}
-    </ul>
+    <div class="row">
+      <ul>
+        {{#each chatBlurbs}}
+          {{> chatBlurb}}
+        {{/each}}
+      </ul>
+    </div>
+    <footer class="row">
+      <div class="new-blurb-form">
+        {{ #if currentUser }}
+          <form class="new-chatBlurb">
+            <input type="textarea" size="50" name="text" placeholder="Type to rant." />
+          </form>
+        {{ /if }}
+      </div>
+      <span class="app_version">v. ALPHA 0.2</span>
+    </footer>
   </div>
+<div class="large-2 columns"></div>
 </body>
 

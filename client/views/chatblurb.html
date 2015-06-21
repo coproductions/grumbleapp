@@ -1,8 +1,7 @@
 <template name="chatBlurb">
-  <li class="{{#if checked}}checked{{/if}}">
+  <li class="chatBlurbItem">
     <button class="delete">&times;</button>
-    <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
-    <span class="chatBlurb_username">{{username}}</span>
+    <span class="chatBlurb_username"><b>{{username}}</b></span>
       {{#if isOwner}}
         <u>(YOU)</u>
       {{/if}}

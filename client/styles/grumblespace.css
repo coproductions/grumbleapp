@@ -1,8 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700|Cagliostro);
+
 body {
   font-family: sans-serif;
-  background-color: #315481;
-  background-image: linear-gradient(to bottom, #315481, #918e82 100%);
-  background-attachment: fixed;
+  background-color: #F93;
+/*  background-image: linear-gradient(to bottom, #315481, #918e82 100%);
+*/  background-attachment: fixed;
 
   position: absolute;
   top: 0;
@@ -12,41 +14,60 @@ body {
 
   padding: 0;
   margin: 0;
-
+  font-family: "Lato", sans-serif;
   font-size: 14px;
 }
 
 .container {
-  max-width: 600px;
+  /*max-width: 600px;*/
   margin: 0 auto;
-  min-height: 100%;
-  background: white;
+  /*min-height: 80%;*/
+  background: #FC3;
 }
 
 header {
-  background: #d2edf4;
-  background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
-  padding: 20px 15px 15px 15px;
+  /*max-width: 600px;*/
+  background: #F93;
+  /*padding: 0 15px 0 10px;*/
   position: relative;
 }
 
+header .hide-completed {
+  float: right;
+}
+
+.main_header{
+  text-align: center
+}
 #login-buttons {
   display: block;
 }
 
-h1 {
-  font-size: 1.5em;
-  margin: 0;
-  margin-bottom: 10px;
+.login-link{
   display: inline-block;
-  margin-right: 1em;
+  font-size: 1em;
+  text-decoration: none;
+/*  float: right;
+*/}
+
+.login-link-text:hover{
+  color: #CCC;
 }
 
-form {
+h1 {
+  text-align: center;
+  font-size: 2em;
+  font-family: "Cagliostro", sans-serif;
+  margin: 0;
+  padding-bottom: 10px;
+  display: block;
+}
+
+/*form {
   margin-top: 10px;
   margin-bottom: -10px;
   position: relative;
-}
+}*/
 
 .new-task input {
   box-sizing: border-box;
@@ -81,7 +102,8 @@ li {
   position: relative;
   list-style: none;
   padding: 15px;
-  border-bottom: #eee solid 1px;
+  border-bottom: #C90 solid 1px;
+  background-color: #FC3;
 }
 
 li .text {
@@ -101,15 +123,20 @@ li.private {
   border-color: #ddd;
 }
 
-header .hide-completed {
-  float: right;
-}
-
 .toggle-private {
   margin-left: 5px;
 }
 
-@media (max-width: 600px) {
+footer {
+  /*max-width: 600px;*/
+  text-align: center;
+  background-color: #F93;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 100%;
+}
+
+/*@media (max-width: 600px) {
   li {
     padding: 12px 15px;
   }
@@ -122,4 +149,11 @@ header .hide-completed {
   .new-task input {
     padding-bottom: 5px;
   }
+}*/
+
+/* CLEARFIX aka GROUP */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
