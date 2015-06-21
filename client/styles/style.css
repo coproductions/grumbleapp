@@ -1,8 +1,4 @@
 /* Nakaz Version 1.0 */
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700|Cagliostro);
 
 /* LET THE EDITS BEGIN */
@@ -22,8 +18,6 @@ html, body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-/*    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;*/
 }
 
 p {
@@ -68,8 +62,6 @@ h2 {
   top: 0;
   z-index: 9999;
   padding-top: 2%;
-  /*display: inline;*/
-
   -webkit-box-shadow: 0 0 4px 1px #CCC;
   -moz-box-shadow: 0 0 4px 1px #CCC;
   box-shadow: 0 0 4px 1px #CCC;
@@ -171,7 +163,6 @@ h2 {
   padding-right: 1em;
   display: inline-block;
   float: right;
-  /*padding-left: 10em;*/
 }
 
 .textName{
