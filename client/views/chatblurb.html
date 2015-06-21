@@ -1,7 +1,8 @@
 <template name="chatBlurb">
   <li class="chatBlurbItem">
     <button class="delete">&times;</button>
-    <img src="assets/pug_orange.png" width="70" height="70" />
+    <div class="user_avatar"></div>
+    <!-- <div class="user_avatar"><img src="assets/pug_orange.png" width="70" height="70" /></div> -->
     <span class="chatBlurb_username"><b>{{username}}: </b></span>
       {{#if isOwner}}
         <u>(YOU)</u>
