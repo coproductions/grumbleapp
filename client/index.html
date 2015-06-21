@@ -23,14 +23,14 @@
         <div class="new-blurb-form">
           {{ #if currentUser }}
             <form class="new-chatBlurb">
-              <input type="textarea" size="50" name="text" placeholder="Type to grumble." />
+              <input type="textarea" size="50" name="text" placeholder="Type to grumble." maxlength="140"/>
               <button>SUBMIT</button>
             </form>
           {{ /if }}
         <div class="tagline">
           <h6>Share your despair. You're not alone.  Are you ready to grumble?</h6>
         </div>
-        <div class="app_version">v. ALPHA 0.3.1</div>
+        <div class="app_version">v. ALPHA 0.3.3</div>
         </div>
         <div class="login-link"><h5>
           {{# if currentUser }}

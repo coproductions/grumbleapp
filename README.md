@@ -15,4 +15,5 @@ Ability to post pics and videos.
 BUGS:
 
 Social media logins via Meteor accounts package do not properly show username.
+Error pops when deleting an entry.
 CSS is still janky.
