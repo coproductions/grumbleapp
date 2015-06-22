@@ -28,6 +28,13 @@ Template.chatBlurb.helpers({
     } else {
       return "Anonymous";
     }
+  },
+  yesPic: function() {
+    if (this.pic){
+      return this.pic;
+    } else {
+      return "";
+    }
   }
 });
 Template.chatBlurb.events({
