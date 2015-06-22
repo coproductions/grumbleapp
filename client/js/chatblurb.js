@@ -21,6 +21,13 @@ Template.chatBlurb.helpers({
     if (this.counter > 0){
       return true;
     }
+  },
+  userNameCheck: function() {
+    if (this.username){
+      return this.username;
+    } else {
+      return "Anonymous";
+    }
   }
 });
 Template.chatBlurb.events({
