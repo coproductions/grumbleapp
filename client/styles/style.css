@@ -14,10 +14,10 @@ body {
 }
 
 html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 p {
@@ -202,19 +202,19 @@ h2 {
 }
 
 #thunderbolt {
-  background-color: #1c57ff;
+  background-color: #25E;
 }
 
 #search {
-  background-color: #f7941d;
+  background-color: #F92;
 }
 
 #image {
-  background-color: #22c064;
+  background-color: #2C6;
 }
 
 #comment {
-  background-color: #e0483e;
+  background-color: #E54;
 }
 
 .user_avatar {
