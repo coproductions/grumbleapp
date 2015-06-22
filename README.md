@@ -10,7 +10,6 @@ A map to connect with people nearby (actually stalking heh heh).
 Some filters for names.
 Option to switch from anonymous posting to username.
 Option for a user profile and user photo.
-Ability to post pics and videos.
 
 BUGS:
 

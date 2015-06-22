@@ -36,6 +36,15 @@ Template.chatBlurb.helpers({
       return "";
     }
   }
+  //incomplete feature
+  // urLocation: function(){
+  //   if(this.location){
+  //     var lat = this.location.lat;
+  //     var lng = this.location.lng;
+  //     var latlng = lat + " " + lng;
+  //     return latlng;
+  //   }
+  // }
 });
 Template.chatBlurb.events({
   "click .delete": function (event) {

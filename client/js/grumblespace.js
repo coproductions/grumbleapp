@@ -26,8 +26,8 @@ Template.body.events({
   "click .pugicon": function (event) {
     var text = "Check this out!";
     var pic = MeteorCamera.getPicture({
-      width: 100,
-      height: 100,
+      width: 90,
+      height: 120,
       quality: 90
     }, function (text, pic){
       Meteor.call("addChatBlurb", text, pic);

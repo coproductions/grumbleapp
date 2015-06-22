@@ -238,7 +238,14 @@ h2 {
   .hamburgericon {
     visibility: hidden;
   }
-  .pugicon {
+/*  .pugicon {
+    visibility: hidden;
+  }*/
+  .navButton{
+    visibility: hidden;
+  }
+
+  #nav{
     visibility: hidden;
   }
 }
